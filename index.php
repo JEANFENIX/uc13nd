@@ -9,8 +9,8 @@
     <!-- link para css bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- link para css personalizado/proprio -->
-    <link rel="stylesheet" href="estilo.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Bovinos Fenix</title>
 </head>
 
 <body class="fundofixo">
