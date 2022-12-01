@@ -128,7 +128,11 @@
         <div class="col-sm-12">
             <div class="panel-footer" style="background: none;">
             <h6 class="text-danger text-center">
-                Desenvolvido por JeanMota; 2022
+            Desenvolvido por Jean Fenix&trade; 2022
+                    <br>
+                    <a href="http://www.bovinosfenix.com.br/" target="_blank">
+                        bovinosfenix.com.br
+                    </a>
             </h6>
         </div>
         </div>
