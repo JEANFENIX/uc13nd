@@ -24,8 +24,10 @@
         <a name="destaques">&nbsp;</a>
         <?php include 'produtos_destaques.php'; ?>
         <!-- Área dos produtos em geral -->
+        <a name="produtos">&nbsp;</a>
         <?php include 'produtos_geral.php'; ?>
 
+        
         <!-- Rodapé -->
         <footer class="panel-footer" style="background: nome;">
             <?php include 'rodape.php'; ?>

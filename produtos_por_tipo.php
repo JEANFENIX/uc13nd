@@ -31,7 +31,7 @@ $numRows = $listaPorTipo->num_rows;
                 <a href="javascript:window.history.go(-1)" class="btn btn-danger">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
-                Em breve...
+                Logo mais...
             </h2>
         <?php }; ?>
         <!-- Mostrar os registros se a consulta NÃO retornar Vazio -->

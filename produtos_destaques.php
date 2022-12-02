@@ -1,6 +1,6 @@
 <?php 
 include 'conn/connect.php';
-$lista = $conn->query("select * from vw_tbprodutos where destaque_produto = 'sim' ");
+$lista = $conn->query("select * from vw_tbprodutos");
 $row_destaque = $lista->fetch_assoc();
 $num_linhas = $lista->num_rows;
 // print_r($row_destaque);
