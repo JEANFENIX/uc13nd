@@ -2,10 +2,10 @@
 include "../conn/connect.php";
 // inicia a verificação do login
 if($_POST){
-    $login=$_POST['login_usuario'];
-    $senha=['senha_usuario'];
-    // echo $login . " - " .$senha;
-    $loinRes = $conn->query("select * from tbusuarios where login_usuario ='$login' and senha_usuario = md5('$senha')");
+    $login = $_POST['login_usuario'];
+    $senha = $_POST['senha_usuario'];
+    // echo $login . " -" .$senha;
+    $loginRes = $conn->query("select * from tbusuarios where login_usuario = '$login' and senha_usuario = md5('$senha')");
     $rowlogin = $loginRes->fetch_assoc();
    // $numRow = $loginRes->num_rows;
    $numRow = $loginRes->num_rows;
@@ -17,10 +17,18 @@ if($_POST){
     $session_name_new = session_name();
    }
    if($numRow > 0){
-    $session['login_usuario'] = $login;
-    $session['nivel_usuario'] = $rowlogin['nivel_usuario'];
-    $session['nome_da_sessao'] = $session_name;
+    $_SESSION['login_usuario'] = $login;
+    $_SESSION['nivel_usuario'] = $rowlogin['nivel_usuario'];
+    $_SESSION['nome_da_sessao'] = session_name();
+    if($rowlogin['nivel_usuario']=='sup'){
+        echo "<script>window.open('index.php','_self')</script>";
+    } elseif ($rowlogin['nivel_usuario']=='com'){
+        echo "<script>window.open('../client/index.php','_self')</script>";  
+    }
+   } else{
+    echo "<script>window.open('invasor.php','_self')</script>";
    }
+
 }
 ?>
 <!DOCTYPE html>
@@ -28,7 +36,7 @@ if($_POST){
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;url=../index.php">
+    <meta http-equiv="refresh" content="150;url=../index.php">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.mi	n.css">
 
