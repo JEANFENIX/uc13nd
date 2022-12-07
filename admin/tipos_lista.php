@@ -2,18 +2,18 @@
 include "acesso_com.php";
 include "../conn/connect.php";
 
-$lista = $conn->query("select * from vw_tbprodutos"); // orde by (tipo, destaque, etc)
+$lista = $conn->query("select * from vw_tbtipos"); // orde by (tipo, destaque, etc)
 $row = $lista->fetch_assoc();
 $nrows = $lista->num_rows;
 ?>
 
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - Lista</title>
+    <title>Tipos - Lista</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -28,10 +28,8 @@ $nrows = $lista->num_rows;
             <thead>
                 <th class="hidden">ID</th>
                 <th>TIPO</th>
-                <th>DESCRIÇÃO</th>
-                <th>RESUMO</th>
-                <th>VALOR</th>
-                <th>IMAGEM</th>
+                <th>SIGLA</th>
+                <th>ROTULO</th>
                 <th>
                     <a href="produtos_insere.php" target="_self" class="btn btn-block btn-primary btn-xs" role="button">
                         <span class="hidden-xs">ADICIONAR</span>
