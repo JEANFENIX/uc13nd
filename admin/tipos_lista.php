@@ -41,26 +41,26 @@ $nrows = $lista->num_rows;
                 <?php do { ?>
                     <!-- inicioa estrutura repetição  -->
                     <tr>
-                        <td class="hidden"><?php echo $row['id_produto']; ?></td>
+                        <td class="hidden"><?php echo $row['id_lista']; ?></td>
                         <td>
-                            <span class="visible-xs"><?php echo $row['sigla_tipo']; ?></span>
-                            <span class="hidden-xs"><?php echo $row['rotulo_tipo']; ?></span>
+                            <span class="visible-xs"><?php echo $row['sigla_lista']; ?></span>
+                            <span class="hidden-xs"><?php echo $row['rotulo_lista']; ?></span>
                         </td>
                         <td>
                             <?php
-                            if ($row['destaque_produto'] == 'Sim') {
+                            if ($row['destaque_lista'] == 'Sim') {
                                 echo '<span class="glyphicon glyphicon-heart text-danger" aria-hidden="true"></span>';
                             } else {
                                 echo '<span class="glyphicon glyphicon-ok text-info" aria-hidden="true"></span>';
                             }
                             ?>
-                            <?php echo $row['descri_produto']; ?>
+                            <?php echo $row['descri_lista']; ?>
                         </td>
                         <td>
-                            <?php echo $row['resumo_produto']; ?>
+                            <?php echo $row['resumo_lista']; ?>
                         </td>
                         <td>
-                            <?php echo number_format($row['valor_produto'], 2, ',', '.'); ?>
+                            <?php echo number_format($row['valor_lista'], 2, ',', '.'); ?>
                         </td>
                         <td>
                             <img src="../images/<?php echo $row['imagem_produto']; ?>" alt="<?php $row['descri_produto']; ?> " width="150">
@@ -70,7 +70,7 @@ $nrows = $lista->num_rows;
                                 <span class="hidden-xs">ALTERAR</span>
                                 <span class="glyphicon glyphicon-refresh"></span>
                             </a>
-                            <button data-nome="<?php echo $row['descri_produto']; ?>" data-id=<?php echo $row['id_produto']; ?> class="delete btn btn-xs btn-block btn-danger">
+                            <button data-nome="<?php echo $row['descri_lista']; ?>" data-id=<?php echo $row['id_produto']; ?> class="delete btn btn-xs btn-block btn-danger">
                                 <span class="hidden-xs">EXCLUIR</span>
                                 <span class="glyphicon glyphicon-trash"></span>
                             </button>

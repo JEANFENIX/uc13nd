@@ -30,7 +30,7 @@ $rows_tipos = $lista_tipos->fetch_all();
                     <span class="icon-bar"></span>
                 </button>
                 <a href="index.php" class="navbar navbar-brand">
-                    <img src="images/BOVINOS_FENIX6.png" alt="Bovinos Fenix">
+                    <img src="images/logo3.png" alt="Logotipo Chuleta Quente">
                 </a>
             </div>
             <!-- fecha Agrupamento mobile -->
@@ -75,7 +75,7 @@ $rows_tipos = $lista_tipos->fetch_all();
                     <!-- final formulário de busca -->
                     <li class="active">
                         <a href="admin/index.php">
-                            <span class="glyphicon glyphicon-user">&nbsp;ADMIN/CLIENTE</span>
+                            <span class="glyphicon glyphicon-user">&nbsp;ADMIN</span>
                         </a>
                     </li>
                 </ul>
@@ -87,4 +87,3 @@ $rows_tipos = $lista_tipos->fetch_all();
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </html>
-<h1></h1>

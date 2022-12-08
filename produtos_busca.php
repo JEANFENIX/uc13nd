@@ -2,7 +2,7 @@
 
 include "conn/connect.php";
 
-$buscar = $_GET['id_buscar'];
+$buscar = $_GET['buscar'];
 $listaPorPalavra = $conn->query("select * from vw_tbprodutos where descri_produto like '%$buscar%';");
 $rowPorPalavra = $listaPorPalavra->fetch_assoc(); //$rowws = $listaPorPalavra->fetch_all();
 $numRows = $listaPorPalavra->num_rows;
