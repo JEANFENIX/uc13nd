@@ -30,7 +30,7 @@ $rows_tipos = $lista_tipos->fetch_all();
                     <span class="icon-bar"></span>
                 </button>
                 <a href="index.php" class="navbar navbar-brand">
-                    <img src="images/logo3.png" alt="Logotipo Chuleta Quente">
+                    <img src="images/logo3.png" alt="Bovino Fenix">
                 </a>
             </div>
             <!-- fecha Agrupamento mobile -->
@@ -75,7 +75,7 @@ $rows_tipos = $lista_tipos->fetch_all();
                     <!-- final formulário de busca -->
                     <li class="active">
                         <a href="admin/index.php">
-                            <span class="glyphicon glyphicon-user">&nbsp;ADMIN</span>
+                            <span class="glyphicon glyphicon-user">&nbsp;ADMIN/CLIENTE</span>
                         </a>
                     </li>
                 </ul>
